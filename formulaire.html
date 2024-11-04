@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon premier formulaire</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <!-- On va coder notre premier formulaire : 
+
+    4 inputs (avec 4 labels) : 
+        - Un pour le username
+        - Un pour l'email 
+        - Un pour le mot de passe 
+        - Un dernier pour la confirmation du mot de passe
+    
+    Une checkbox (à vous de trouver comment) avec la phrase (qui sera à coté) : J'accepte les termes et conditions
+
+    Il faudra enfin un bouton de soumission. -->
+
+    <h1>Mon premier formulaire</h1>
+
+    <!-- D'abord ma balise form qui contiendra toujours les éléments de mes formulaires -->
+    <form>
+        <!-- Partie classique du formulaire avec pour chaque élément un label et un input -->
+        <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="Votre nom de user ...">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Votre email ...">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Votre mot de passe ...">
+        </div>
+        <div>
+            <label for="confirm">Confirmer le Password</label>
+            <input type="password" name="confirm" placeholder="Confirmer le mot de passe ...">
+        </div>
+
+        <!-- Partie avec la case à cocher (checkbox) et la phrase "J'accepte les conditions etc"" -->
+        <div class="check">
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">J'accepte les termes et conditions</label>
+        </div>
+
+        <!-- <button>Signup</button> -->
+        <input type="submit" value="Signup">
+    </form>
+
+</body>
+</html>

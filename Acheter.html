@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acheter</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    
+    <h1><b>LEGO Webstore</b></h1>
+<hr>
+<ul>
+    <nav>
+    <li><a href="page.html">Acceuil</a></li>
+    <li><a href="Acheter.html">Acheter</a></li>
+    </nav>
+</ul>
+<hr>
+
+<!-- h2+p+h3+form>p+(input+p)*2+(label+input)*3+h3+p+(select>option*4)+label+textarea+h3+input+p+input -->
+
+<h2><b>Acheter des LEGO</b></h2>
+<p>Remplissez le formulaire ci-dessous pour commander des LEGO !</p>
+
+<h3>Informations personnelles</h3>
+
+<form>
+    <p>Civilité :</p>
+
+    <div class="radio-couple">
+    <input value="mister" name="gender" type="radio">
+    <p>Mr</p>
+    </div>
+
+    <div class="radio-couple">
+    <input value="miss" name="gender" type="radio">
+    <p>Mme</p>
+    </div>
+
+    <label for="firstname">Prénom</label>
+    <input name="firstname" placeholder="Votre prénom ..." type="text">
+    <label for="lastname">Nom</label>
+    <input name="lastname" placeholder="Votre nom ..." type="text">
+    <label for="email">Email</label>
+    <input name="Email" placeholder="Votre Email ..." type="text">
+
+    <h3><b>Informations de livraison</b></h3>
+    <p>Quantité commandée</p>
+    
+    <select name="boxes" id="select-boxes">
+        <option value="one">1 boite</option>
+        <option value="two">2 boites</option>
+        <option value="three">3 boites</option>
+        <option value="four">4 boites</option>
+    </select>
+    
+    <label for="adress">Adresse de livraison</label>
+    <textarea name="adress"></textarea>
+    <h3><b>Confirmation</b></h3>
+    <input name="confirm" type="checkbox">
+    <p>J'ai relu la commande et certifie que ces informations sont correctes.</p>
+    <input value="Confirmer la commande" name="submit" type="submit">
+    <hr>
+    <nav>
+        <a href="#">Retour en haut de la page</a>
+    </nav>
+    <p>TP1 : Découverte de HTML et CSS</p>
+    <p>L2 : Développement Web - 2018</p>
+</form>
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

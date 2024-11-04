@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(darksalmon, orange);
+}
+
+.container {
+    background-color: #f9d5b7;
+    width: 500px;
+    height: auto;
+    margin: 0px auto;
+    padding: 16px;
+}
+
+img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.red-color, nav, a {
+    color: darkred;
+    text-align: center;
+    background-color: blanchedalmond;
+    text-decoration: none;
+}
+
+nav {
+    padding: 8px 0px;
+}
+
+a {
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    background-color: blanchedalmond;
+    text-align: center;
+}

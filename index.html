@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- Les balises <head></head> contiennent les infos de types meta (avec les balises meta)
+Le titre de notre page mais aussi la connexion avec le fichier CSS. Ce qui est contenu au sein 
+des balises head n'est pas cené etre visible sur la page  -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Première page HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- On va coder entre les balises body le contenu visible de notre page  -->
+<body>
+    
+    <!-- La balise h1 = gros titre. h2 = 2eme gros titre, h3 = titre moyen etc
+    h6 étant un "petit" titre -->
+    <h1 class="first-title">Ceci est un GROS titre</h1>
+    <h2 id="second-title">H2 c'est un peu plus petit</h2>
+    <h3 class="first-title">Encore plus petit ...</h3>
+
+    <!-- Ici la balise p pour les paragraphes.
+    J'utilise également lorem ipsum pour générer du "faux" texte
+    Ici la commande pour génerer 4 lignes : lorem*4 -->
+    <p>
+        Lorem, ipsum <span class="my-span"></span> dolor sit amet consectetur adipisicing elit. Voluptatibus dolore odio nemo, nisi voluptate veniam consectetur cupiditate rem nobis saepe dicta necessitatibus, maxime eligendi, optio sint unde ratione ipsum non!
+        Dolores, hic facilis aperiam eveniet repudiandae recusandae qui, quidem architecto sed reiciendis eligendi. Accusantium fugit, aut eius labore totam assumenda molestiae officia explicabo blanditiis voluptas facere minima natus, in dolor.
+        Rerum voluptatibus aut ab sit illum distinctio aliquid reiciendis rem ipsum pariatur? Nobis excepturi nulla ipsam voluptas facere corrupti saepe at quibusdam laboriosam illo beatae eveniet quaerat dolor, deleniti laborum.
+        Neque cum voluptatum perferendis ea, reprehenderit suscipit explicabo. Sequi necessitatibus explicabo dolor ab magnam rem neque numquam ratione dolorem. Omnis minima quod aperiam? Maiores maxime eligendi neque, nulla fugiat temporibus.
+    </p>
+<!-- 
+    La balise a pour les liens hypertexte, 
+    On note ici 2 attributs href et target -> href étant la page de destination
+    et target=_blank servant à préciser que l'on veut ouvrir la page dans un nouvel onglet -->
+    <a href="./page.html" target="_blank">Ceci est un lien</a>
+
+    <!-- L'attribut src est la source de l'image et alt est un message qui s'affiche 
+    dans le cas ou l'image n'apparait pas.
+    On remarque que la balise img n'a pas de balise fermante, c'est un des rare cas de balise orpheline -->
+    <img src="./music-theory-camhembert.png" alt="image de théorie musicale">
+
+    <!-- Ol et ul sont des listes, ordonnées pour ol et non-ordonnée pour ul 
+    Les listes sont toujours composées de balises li qui représentent les élements de la liste -->
+    <ol>
+        <li>Chat</li>
+        <li>Chien</li>
+        <li>Canard</li>
+    </ol>
+
+    <ul>
+        <li>Chat</li>
+        <li>Chien</li>
+        <li>Canard</li>
+    </ul>
+
+    <!-- Ici un formulaire composés de labels et d'inputs ainsi que d'un bouton de soumission 
+    (au choix entre la balise button ou la balise input avec pour type "submit") -->
+    <form >
+        <label for="username">Username</label>
+        <input name="username" type="text" placeholder="Ici votre nom...">
+        <label for="password">Password</label>
+        <input name="password" type="password" placeholder="Ici votre mot de passe...">
+        <!-- <button>Soumettre le formulaire</button> -->
+        <input type="submit" value="Soumettre">
+    </form>
+
+     <!-- Ici table est la balise pour les tableaux. 
+    Elle comprend des tr (table rows ou les lignes du tableau)
+    Tr qui sont soient des en.tetes (th ou table head) soit des cellules classqies avec du contenu (td ou table data) -->
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Age</th>
+            <th>Ville</th>
+        </tr>
+        <tr>
+            <td>Romain</td>
+            <td>35</td>
+            <td>Nice</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>35</td>
+            <td>Toronto</td>
+        </tr>
+    </table>
+
+   <!---- La balise div est une balise très utilisée surtout en tant que container
+    pour d'autres éléments-->
+    <div>
+        <h3>Ma super div</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus blanditiis fugiat nobis fugit animi quis vero tempore fuga odio est reiciendis ab, saepe laboriosam nisi deleniti ipsam! Aliquid, dicta. Corrupti.</p>
+    </div>
+
+
+    <section>
+        <h3>Ma première section</h3>
+        <ul>
+            <li>Bonjour</li>
+        </ul>
+    </section>
+
+</body>
+</html>
